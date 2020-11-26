@@ -1,0 +1,140 @@
+.hidden {
+    display: none;
+}
+
+#chat {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 600px;
+    margin: 20px 0
+
+}
+
+#chatTitle {
+    width: 720px;
+    text-align: left;
+    margin: 5px 10px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 0 2px;
+    text-indent: 5px;
+}
+
+#main {
+    width: 100%;
+    height: 570px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main #users {
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    margin: 5px 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.user {
+    width: 90%;
+    margin: 5px auto;
+    text-align: left;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userMess {
+    display: none;
+    width: 25px;
+    height: 25px;
+    color: red;
+    background-color: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.7em;
+}
+
+.user.active {
+    background-color: #777;
+}
+
+#main #messagesBlock {
+    margin: 5px 10px;
+    width: 500px;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#messagesTitle {
+    width: 90%;
+    margin: 5px auto;
+    height: 30px;
+    line-height: 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#messages {
+    width: 90%;
+    height: 100%;
+    margin: 5px auto;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.message {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.message--from {
+    text-align: left;
+    background-color: #fff;
+}
+
+.message--to {
+    text-align: right;
+    background-color: #555;
+    color: white;
+}
+
+
+#messageForm {
+    height: 50px;
+    width: 720px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#messageForm #message {
+    width: 60%;
+    height: 36px;
+}
+
+#messageForm button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
